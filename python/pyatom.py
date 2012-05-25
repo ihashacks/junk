@@ -8,4 +8,4 @@
 import feedparser
 
 feed = feedparser.parse('http://www.ihashacks.com/atom.xml')
-print feed.entries[0].link
+print feed.feed.title+" "+'"'+feed.entries[0].title+'"'+" "+feed.entries[0].link
